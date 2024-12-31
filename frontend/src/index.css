@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+    font-family: "Oswald", sans-serif;
+}
+
+@layer base {
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  }
+
+  .horizontal-slider {
+  width: 100%;
+  height: 8px;
+  background: #ddd;
+  position: relative;
+  margin: 20px 0;
+}
+
+.example-track {
+  background: #ddd;
+  height: 8px;
+}
+
+.example-thumb {
+  position: absolute;
+  top: -10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3490dc;
+  color: white;
+  width: 24px;
+  height: 24px;
+  padding: 20px;
+  border-radius: 50%;
+  cursor: grab;
+  position: absolute; 
+}
+
+.custom-thumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3490dc;
+  color: #fff; 
+  width: 24px;
+  height: 24px;
+  border-radius: 50%; 
+  cursor: grab;
+  position: absolute; 
+}
+
+.thumb-value {
+  position: absolute;
+  top: -28px;
+  background-color: #3490dc;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.custom-circle {
+  width: 90px !important; 
+  height: 90px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  /* padding: 16px !important; */
+}
